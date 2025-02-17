@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Photo Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>แปลงภาพคนเป็นอนิเมะ</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button id="convertButton">แปลงภาพ</button>
+    <div>
+        <h2>ภาพต้นฉบับ:</h2>
+        <img id="originalImage" alt="Original Image">
+    </div>
+    <div>
+        <h2>ภาพที่แปลงแล้ว:</h2>
+        <canvas id="resultCanvas"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="app.js"></script>
+</body>
+</html>

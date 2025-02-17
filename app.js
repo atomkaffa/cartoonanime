@@ -31,7 +31,7 @@ document.getElementById('convertButton').addEventListener('click', async () => {
 
             // โหลดภาพเป็น Tensor
             let imageTensor = tf.browser.fromPixels(originalImage)
-                .resizeBilinear([128, 128])  // ปรับเป็น 512x512
+                .resizeBilinear([512, 512])  // ปรับเป็น 512x512
                 .toFloat()
                 .div(127.5)  // Normalize ค่าให้อยู่ในช่วง [-1, 1]
                 .sub(1)

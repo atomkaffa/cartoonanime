@@ -34,7 +34,7 @@ document.getElementById('convertButton').addEventListener('click', async () => {
 
             // แปลงภาพเป็น Tensor และปรับขนาดเป็น 128x128 ก่อนใส่โมเดล
             let imageTensor = tf.browser.fromPixels(originalImage)
-                .resizeBilinear([512, 512])
+                .resizeBilinear([1024, 1024])
                 .toFloat()
                 .div(127.5)
                 .sub(1)

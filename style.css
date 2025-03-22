@@ -1,20 +1,55 @@
+/* Dark Theme */
 body {
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
-img, canvas {
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
+h1 {
+    color: #ffcc00;
+}
+
+.upload-container {
+    margin-bottom: 20px;
 }
 
 button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #ff5722;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* จัดตำแหน่งรูปภาพต้นฉบับและแปลงแล้วให้อยู่บรรทัดเดียวกัน */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* กรอบรอบรูปภาพ */
+.image-box {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    width: 320px;
+}
+
+img, canvas {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }

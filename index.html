@@ -8,15 +8,21 @@
 </head>
 <body>
     <h1>แปลงภาพคนเป็นอนิเมะ</h1>
-    <input type="file" id="imageUpload" accept="image/*">
-    <button id="convertButton">แปลงภาพ</button>
-    <div>
-        <h2>ภาพต้นฉบับ:</h2>
-        <img id="originalImage" alt="Original Image">
+    
+    <div class="upload-container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="convertButton">แปลงภาพ</button>
     </div>
-    <div>
-        <h2>ภาพที่แปลงแล้ว:</h2>
-        <canvas id="resultCanvas"></canvas>
+
+    <div class="image-container">
+        <div class="image-box">
+            <h2>ภาพต้นฉบับ</h2>
+            <img id="originalImage" alt="Original Image">
+        </div>
+        <div class="image-box">
+            <h2>ภาพที่แปลงแล้ว</h2>
+            <canvas id="resultCanvas"></canvas>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>

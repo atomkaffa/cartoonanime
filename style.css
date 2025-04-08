@@ -1,14 +1,14 @@
-/* Dark Theme */
+/* Light Theme */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
+    background-color: #ffffff; /* เปลี่ยนจาก #121212 เป็น #ffffff */
+    color: #000000; /* เปลี่ยนจาก white เป็น black */
     text-align: center;
     padding: 20px;
 }
 
 h1 {
-    color: #ffcc00;
+    color: #ff5722; /* เปลี่ยนสีให้เหมาะกับพื้นหลังขาว เช่น สีส้ม */
 }
 
 .upload-container {
@@ -39,10 +39,10 @@ button:hover {
 
 /* กรอบรอบรูปภาพ */
 .image-box {
-    background-color: #222;
+    background-color: #f0f0f0; /* เปลี่ยนพื้นหลังกล่องให้ดูสว่าง */
     padding: 15px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid #ccc; /* เปลี่ยนสีกรอบให้ดูอ่อนลง */
     text-align: center;
     width: 320px;
 }
